@@ -3,8 +3,8 @@ import sqlite3
 
 
 def connectDatabase(databaseFilename):
-    #connection = sqlite3.connect(databaseFilename) #izettleData.db
-    connection = sqlite3.connect(':memory:')
+    connection = sqlite3.connect(databaseFilename) #izettleData.db
+    #connection = sqlite3.connect(':memory:')
     return connection
 
 def createDatabaseTable(connection):
