@@ -1,0 +1,8 @@
+uses cURL in git bash
+
+
+command for gaining access token (using email and password for Kristian's account) and save it to apitoken.txt
+curl -s -d 'grant_type=password&client_id=559d502b-268e-465b-a9f5-0cec72d4fc59&client_secret=IZSECa160e2e7-dd8c-436f-878d-a9b1054a0dcc&username=kristian.kjerstad%40dnb.no&password=sd71bXa3' -H 'Content-Type: application/x-www-form-urlencoded' -o C:/Users/AB52374/apitoken.txt 'https://oauth.izettle.net/token'
+
+command for retreiving purchases and save data to apidata.txt
+curl https://purchase.izettle.com/purchases -o C:/Users/AB52374/apidata.txt -H "Authorization: Bearer ACCESS_TOKEN_HERE"
